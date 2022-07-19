@@ -33,6 +33,9 @@ public class TestVolcano {
       assertEquals(a, 1300);
       int m = v1.maxUnder(1300);
       assertEquals(m, 1);
+      Volcano v2 = new Volcano(v1);
+      assertEquals(v2.getName(), "Etna");
+      assertEquals(v2.getCount(), 2);
    }
    
 }
