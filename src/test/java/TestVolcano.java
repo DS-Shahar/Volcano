@@ -38,29 +38,34 @@ public class TestVolcano {
       v1.add(1200);
       assertEquals(v1.getCount(), 3);
    }
+   
    @Test
    public void testFix() {
       testAdd();
       v1.fix(1, 1350);
    }
+   
    @Test
    public void testDelete() {
       testAdd();
       v1.delete(1);
       assertEquals(v1.getCount(), 2);
    }
+   
    @Test
    public void testAverage() {
       testAdd();
       double a = v1.average();
       assertEquals(a, 1300);
    }
+   
    @Test
    public void testMaxUnder() {
       testAdd();
       int m = v1.maxUnder(1400);
       assertEquals(m, 1);
    }
+   
    @Test
    public void testCopyConstructor() {
       testAdd();
