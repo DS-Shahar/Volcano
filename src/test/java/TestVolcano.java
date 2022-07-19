@@ -13,12 +13,12 @@ public class TestVolcano {
    private Volcano v1;
    
    @BeforeAll
-   public void setup() {
-      v1 = new Volcano("Etna", 12);
+   public static void setup() {
    }
    
    @BeforeEach     
    public void init() {
+      v1 = new Volcano("Etna", 12);
    }
    
    @Test
